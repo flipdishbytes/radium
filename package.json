@@ -1,6 +1,6 @@
 {
-  "name": "radium",
-  "version": "0.25.0",
+  "name": "@flipdish/radium",
+  "version": "0.0.2",
   "description": "A set of tools to manage inline styles on React elements",
   "main": "index.js",
   "module": "es/index.js",
@@ -8,7 +8,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/formidablelabs/radium.git"
+    "url": "https://github.com/flipdishbytes/radium.git"
   },
   "homepage": "https://github.com/formidablelabs/radium",
   "bugs": "https://github.com/formidablelabs/radium/issues",

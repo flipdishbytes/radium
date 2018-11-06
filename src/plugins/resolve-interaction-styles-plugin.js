@@ -65,6 +65,18 @@ const resolveInteractionStyles = function(config: PluginConfig): PluginResult {
         setState(':active', false);
       }
     };
+
+    const existingOnTouchStart = props.onTouchStart;
+    newProps.onTouchStart = function(e) {
+      existingOnTouchStart && existingOnTouchStart(e);
+      setState(':active', 'viatouchstart');
+    };
+
+    const existingOnTouchEnd= props.onTouchEnd;
+    newProps.onTouchEnd = function(e) {
+      existingOnTouchEnd && existingOnTouchEnd(e);
+      setState(':active', false);
+    };
   }
 
   if (style[':focus']) {
